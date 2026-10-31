@@ -23,6 +23,10 @@
     "addressCountry": "KR"
   },
   "geo": {"@type": "GeoCoordinates", "latitude": 37.5436519, "longitude": 127.015331},
+  "openingHoursSpecification": [
+    {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"], "opens": "11:00", "closes": "15:00"},
+    {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"], "opens": "17:00", "closes": "22:00"}
+  ],
   "acceptsReservations": true
 }
 </script>
@@ -118,8 +122,8 @@
       <table>
         <tr><th>Lunch</th><td>11:00 – 15:00 (last order 14:30)</td></tr>
         <tr><th>Break</th><td>15:00 – 17:00</td></tr>
-        <tr><th>Dinner</th><td>17:00 – 22:00 (last order 20:30) <span class="todo">Thu/Fri closing time</span></td></tr>
-        <tr><th>Closed</th><td><span class="todo">closed days</span></td></tr>
+        <tr><th>Dinner</th><td>17:00 – 22:00 (last order 20:30)</td></tr>
+        <tr><th>Open</th><td>Every day, no closing days</td></tr>
       </table>
     </div>
   </section>
