@@ -10,6 +10,15 @@
   gtag('js', new Date());
 
   gtag('config', 'AW-18469553331');
+  document.addEventListener('click', function (e) {
+    var a = e.target.closest && e.target.closest('a[href]');
+    if (!a) return;
+    var h = a.href, label = '';
+    if (h.indexOf('tel:') === 0) label = 'WbwNCLmy37EdELOJ_OZE';
+    else if (/google\.com\/maps/.test(h)) label = 'EqxQCKaW17EdELOJ_OZE';
+    else if (/catchtable|\/booking/.test(h)) label = '4ljdCLyy37EdELOJ_OZE';
+    if (label) gtag('event', 'conversion', {send_to: 'AW-18469553331/' + label, transport_type: 'beacon'});
+  });
 </script>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">

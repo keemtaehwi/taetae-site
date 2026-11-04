@@ -9,6 +9,15 @@
   gtag('js', new Date());
 
   gtag('config', 'AW-18469553331');
+  document.addEventListener('click', function (e) {
+    var a = e.target.closest && e.target.closest('a[href]');
+    if (!a) return;
+    var h = a.href, label = '';
+    if (h.indexOf('tel:') === 0) label = 'WbwNCLmy37EdELOJ_OZE';
+    else if (/google\.com\/maps/.test(h)) label = 'EqxQCKaW17EdELOJ_OZE';
+    else if (/catchtable|\/booking/.test(h)) label = '4ljdCLyy37EdELOJ_OZE';
+    if (label) gtag('event', 'conversion', {send_to: 'AW-18469553331/' + label, transport_type: 'beacon'});
+  });
 </script>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -441,6 +450,7 @@
         <tr><th>Address</th><td>2F, 29 Hallimmal 3-gil, Seongdong-gu, Seoul<br>서울특별시 성동구 한림말3길 29 2층</td></tr>
         <tr><th>Subway</th><td>Oksu Station Exit 7, about 340 m</td></tr>
         <tr><th>Phone</th><td><a href="tel:+821025036622">+82 10-2503-6622</a></td></tr>
+        <tr><th>Map</th><td><a href="https://www.google.com/maps/search/?api=1&query=%EC%98%A5%EC%88%98%EB%8F%99%20%ED%83%9C%ED%83%9C%20%EC%84%9C%EC%9A%B8%20%EC%84%B1%EB%8F%99%EA%B5%AC%20%ED%95%9C%EB%A6%BC%EB%A7%903%EA%B8%B8%2029">Open in Google Maps</a></td></tr>
         <tr><th>Parking</th><td>No parking in the building. Nearest: Oksu Riverzen shopping center parking. Cheapest: public parking lot in front of Mega Coffee Oksu.</td></tr>
       </table>
     </div>
