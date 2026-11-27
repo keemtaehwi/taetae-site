@@ -511,10 +511,10 @@
   footer { padding: 36px 0 64px; color: var(--muted); font-size: 14px; }
 
   .hero-media { position: relative; margin: 0 0 8px; border-radius: 14px; overflow: hidden; background:#1f3a2f; }
-  .hero-media video, .hero-media img { display:block; width:100%; height:auto; }
+  .hero-media video, .hero-media img { display:block; width:100%; height:auto; max-height:72vh; object-fit:cover; }
   .gallery { display:grid; grid-template-columns: repeat(2, 1fr); gap:10px; }
   .gallery figure { margin:0; }
-  .gallery img { width:100%; aspect-ratio: 1/1; object-fit:cover; border-radius:10px; display:block; }
+  .gallery img { width:100%; height:auto; aspect-ratio: 1/1; object-fit:cover; border-radius:10px; display:block; }
   .gallery figcaption { font-size:13px; color: var(--muted); margin-top:6px; }
   .gallery .wide { grid-column: 1 / -1; }
   .gallery .wide img { aspect-ratio: 16/9; }
