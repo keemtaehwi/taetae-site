@@ -27,6 +27,17 @@
 <meta property="og:type" content="restaurant">
 <meta property="og:title" content="태태 TAETAE | 서울 옥수동 중식당">
 <meta property="og:description" content="흑초 찹쌀 탕수육, 수란 오겹 간짜장, 꽃게짬뽕. 옥수동 중식당 태태.">
+<meta property="og:image" content="https://keemtaehwi.github.io/taetae-site/images/og-taetae-oksu.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="옥수동 중식당 태태의 요리 한상 (점보크림새우, 흑초 찹쌀 탕수육, 꽃게짬뽕 등)">
+<meta property="og:url" content="https://keemtaehwi.github.io/taetae-site/">
+<meta property="og:site_name" content="태태 TAETAE">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://keemtaehwi.github.io/taetae-site/images/og-taetae-oksu.jpg">
+<link rel="icon" type="image/png" sizes="48x48" href="https://keemtaehwi.github.io/taetae-site/images/favicon-48.png">
+<link rel="apple-touch-icon" href="https://keemtaehwi.github.io/taetae-site/images/apple-touch-icon.png">
+<link rel="preload" as="image" href="https://keemtaehwi.github.io/taetae-site/images/taetae-oksu-chinese-dishes-table.jpg">
 <meta property="og:locale" content="ko_KR">
 <link rel="alternate" hreflang="ko" href="https://keemtaehwi.github.io/taetae-site/">
 <link rel="alternate" hreflang="en" href="https://keemtaehwi.github.io/taetae-site/en.html">
@@ -39,6 +50,9 @@
 {
   "@context": "https://schema.org",
   "@type": "Restaurant",
+  "image": ["https://keemtaehwi.github.io/taetae-site/images/og-taetae-oksu.jpg", "https://keemtaehwi.github.io/taetae-site/images/taetae-oksu-chinese-dishes-table.jpg", "https://keemtaehwi.github.io/taetae-site/images/taetae-oksu-interior-lanterns.jpg", "https://keemtaehwi.github.io/taetae-site/images/taetae-oksu-interior-table-pendant.jpg", "https://keemtaehwi.github.io/taetae-site/images/taetae-heukcho-chapssal-tangsuyuk.jpg", "https://keemtaehwi.github.io/taetae-site/images/taetae-kkotge-jjamppong.jpg", "https://keemtaehwi.github.io/taetae-site/images/taetae-jjajang-sooran-shrimp.jpg"],
+  "logo": "https://keemtaehwi.github.io/taetae-site/images/taetae-logo-round-512.png",
+  "url": "https://keemtaehwi.github.io/taetae-site/",
   "name": "태태",
   "alternateName": "TAETAE",
   "servesCuisine": ["중식", "Chinese"],
@@ -395,6 +409,18 @@
   footer { padding: 36px 0 64px; color: var(--muted); font-size: 14px; }
   ul.menu li span.price { float: right; color: var(--muted); white-space: nowrap; margin-left: 12px; }
   .note { margin: 18px 0 0; color: var(--muted); font-size: 15px; }
+
+  .hero-media { position: relative; margin: 0 0 8px; border-radius: 14px; overflow: hidden; background:#1f3a2f; }
+  .hero-media video, .hero-media img { display:block; width:100%; height:auto; }
+  .gallery { display:grid; grid-template-columns: repeat(2, 1fr); gap:10px; }
+  .gallery figure { margin:0; }
+  .gallery img { width:100%; aspect-ratio: 1/1; object-fit:cover; border-radius:10px; display:block; }
+  .gallery figcaption { font-size:13px; color: var(--muted); margin-top:6px; }
+  .gallery .wide { grid-column: 1 / -1; }
+  .gallery .wide img { aspect-ratio: 16/9; }
+  .illust { display:grid; grid-template-columns: repeat(3, 1fr); gap:10px; }
+  .illust img { width:100%; border-radius:8px; display:block; background:#fff; }
+  .brandmark { width:72px; height:72px; border-radius:50%; display:block; margin-bottom:10px; }
 </style>
 </head>
 <body>
@@ -411,8 +437,43 @@
   </div>
 </header>
 
+<div class="wrap"><div class="hero-media">
+  <video autoplay muted loop playsinline preload="metadata" poster="https://keemtaehwi.github.io/taetae-site/images/taetae-oksu-chinese-dishes-table.jpg" aria-label="옥수동 중식당 태태 10초 영상">
+    <source src="https://keemtaehwi.github.io/taetae-site/images/taetae-oksu-10s.mp4" type="video/mp4">
+    <img src="https://keemtaehwi.github.io/taetae-site/images/taetae-oksu-chinese-dishes-table.jpg" alt="옥수동 중식당 태태의 요리 한상 (점보크림새우, 흑초 찹쌀 탕수육, 꽃게짬뽕 등)">
+  </video>
+</div></div>
+
+
 <main>
-  <section id="about-brand">
+  
+  <section id="photos">
+    <div class="wrap">
+      <h2>사진으로 보는 태태</h2>
+      <div class="gallery">
+    <figure class="wide"><img src="https://keemtaehwi.github.io/taetae-site/images/taetae-oksu-chinese-dishes-table.jpg" alt="옥수동 중식당 태태의 요리 한상 (점보크림새우, 흑초 찹쌀 탕수육, 꽃게짬뽕 등)" loading="lazy" width="1200" height="1200"><figcaption>옥수동 중식당 태태의 요리 한상 (점보크림새우, 흑초 찹쌀 탕수육, 꽃게짬뽕 등)</figcaption></figure>
+    <figure><img src="https://keemtaehwi.github.io/taetae-site/images/taetae-oksu-interior-lanterns.jpg" alt="옥수동 중식당 태태 매장 내부, 종이 등 조명과 오픈 키친" loading="lazy" width="1200" height="1200"><figcaption>옥수동 중식당 태태 매장 내부, 종이 등 조명과 오픈 키친</figcaption></figure>
+    <figure><img src="https://keemtaehwi.github.io/taetae-site/images/taetae-oksu-interior-table-pendant.jpg" alt="옥수동 중식당 태태 매장 테이블과 펜던트 조명" loading="lazy" width="1200" height="1200"><figcaption>옥수동 중식당 태태 매장 테이블과 펜던트 조명</figcaption></figure>
+    <figure><img src="https://keemtaehwi.github.io/taetae-site/images/taetae-heukcho-chapssal-tangsuyuk.jpg" alt="태태 흑초 찹쌀 탕수육" loading="lazy" width="1200" height="1200"><figcaption>태태 흑초 찹쌀 탕수육</figcaption></figure>
+    <figure><img src="https://keemtaehwi.github.io/taetae-site/images/taetae-kkotge-jjamppong.jpg" alt="태태 꽃게짬뽕" loading="lazy" width="1200" height="1200"><figcaption>태태 꽃게짬뽕</figcaption></figure>
+    <figure><img src="https://keemtaehwi.github.io/taetae-site/images/taetae-jjajang-sooran-shrimp.jpg" alt="수란과 새우를 올린 태태 짜장" loading="lazy" width="1200" height="1200"><figcaption>수란과 새우를 올린 태태 짜장</figcaption></figure>
+    <figure><img src="https://keemtaehwi.github.io/taetae-site/images/taetae-chili-stir-fry.jpg" alt="건고추와 함께 볶은 태태 요리" loading="lazy" width="1200" height="1200"><figcaption>건고추와 함께 볶은 태태 요리</figcaption></figure>
+    <figure class="wide"><img src="https://keemtaehwi.github.io/taetae-site/images/taetae-jjamppong-jjajang-lunch.jpg" alt="태태 짬뽕과 짜장면 점심" loading="lazy" width="1200" height="1200"><figcaption>태태 짬뽕과 짜장면 점심</figcaption></figure>
+      </div>
+      <h3 style="margin-top:28px">태태의 한 끼</h3>
+      <div class="illust">
+        <img src="https://keemtaehwi.github.io/taetae-site/images/taetae-illust-1-fresh-ingredients.jpg" alt="태태 일러스트 1. 신선한 재료" loading="lazy">
+        <img src="https://keemtaehwi.github.io/taetae-site/images/taetae-illust-2-cooking.jpg" alt="태태 일러스트 2. 센 불에 볶기" loading="lazy">
+        <img src="https://keemtaehwi.github.io/taetae-site/images/taetae-illust-3-enjoy.jpg" alt="태태 일러스트 3. 함께 즐기기" loading="lazy">
+        <img src="https://keemtaehwi.github.io/taetae-site/images/taetae-illust-interior.jpg" alt="태태 매장 인테리어 일러스트" loading="lazy">
+        <img src="https://keemtaehwi.github.io/taetae-site/images/taetae-illust-chinese-cuisine.jpg" alt="태태 Chinese Cuisine 일러스트" loading="lazy">
+        <img src="https://keemtaehwi.github.io/taetae-site/images/taetae-illust-table.jpg" alt="태태 테이블 일러스트" loading="lazy">
+      </div>
+      <p class="note"><a href="https://keemtaehwi.github.io/taetae-site/images/taetae-oksu-10s-title.mp4">옥수동 중식당 태태 10초 영상</a></p>
+    </div>
+  </section>
+
+<section id="about-brand">
     <div class="wrap">
       <h2>태태는 어떤 곳인가요?</h2>
       <p class="lead" style="font-size:18px">태태(TAETAE)는 옥수역 7번 출구에서 걸어서 5분 거리에 있는 중식당으로, 8~10명 단체석부터 20~30명 단체 예약과 대관까지 받고, 비건 메뉴 2가지를 갖추고 연중무휴로 엽니다.</p>
